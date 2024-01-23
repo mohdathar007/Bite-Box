@@ -1,20 +1,20 @@
 import { Card, IconButton } from "@mui/material";
 import React from "react";
-//import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const RestaurantCrad = ({ item, index }) => {
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 const handelAddToFavorites=()=>{
     console.log("handle add to favorites...")
 }
   return (
     <Card className="m-5 w-[18rem] productCard">
       <div
-        // onClick={navigate(
-        //   `/restaurants/${item.address}/${item.name}/${item.id}`
-        // )}
+        onClick={()=>navigate(
+          `/restaurant/${item.address}/${item.name}/${item.id}`
+        )}
       >
         <img
           className="w-full h-[10rem] rounded-md object-cover"
