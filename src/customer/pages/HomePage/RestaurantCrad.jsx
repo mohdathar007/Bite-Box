@@ -13,7 +13,7 @@ const handelAddToFavorites=()=>{
     <Card className="m-5 w-[18rem] productCard">
       <div
         onClick={()=>navigate(
-          `/restaurant/${item.address}/${item.name}/${item.id}`
+          `/restaurant/${item.address}/${item.name}/${index+1}`
         )}
       >
         <img
@@ -23,7 +23,9 @@ const handelAddToFavorites=()=>{
         />
       </div>
       <div className="p-4 textPart lg:flex w-full justify-between ">
-        <div className="space-y-1">
+        <div className="space-y-1" onClick={()=>navigate(
+          `/restaurant/${item.address}/${item.name}/${index+1}`
+        )}>
           <p className="font-semibold text-lg">{item.name}</p>
           <p className="text-gray-500 text-sm">
             {item.description.length > 25
