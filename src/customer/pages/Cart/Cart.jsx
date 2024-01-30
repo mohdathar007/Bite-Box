@@ -138,7 +138,7 @@ const Cart = () => {
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <Field
-                    lable="Street Address"
+                    label="Street Address"
                     fullWidth
                     variant="outlined"
                     error={!ErrorMessage("streetAddress")}
@@ -153,7 +153,7 @@ const Cart = () => {
                 </Grid>
                 <Grid item xs={6}>
                   <Field
-                    lable="State"
+                    label="State"
                     fullWidth
                     variant="outlined"
                     error={!ErrorMessage("state")}
@@ -168,7 +168,7 @@ const Cart = () => {
                 </Grid>
                 <Grid item xs={6}>
                   <Field
-                    lable="Pincode"
+                    label="Pincode"
                     fullWidth
                     variant="outlined"
                     error={!ErrorMessage("pincode")}
@@ -183,7 +183,7 @@ const Cart = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Field
-                    lable="City"
+                    label="City"
                     fullWidth
                     variant="outlined"
                     error={!ErrorMessage("city")}
@@ -197,7 +197,7 @@ const Cart = () => {
                   />
                 </Grid>
                 <Grid className="mt-5 ml-5" xs={12}>
-                  <Button variant="contained">Deliver here</Button>
+                  <Button type="Submit" variant="contained">Deliver here</Button>
                 </Grid>
               </Grid>
             </Form>
